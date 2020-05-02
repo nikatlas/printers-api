@@ -20,14 +20,14 @@
     "description": {
       "type": "text"
     },
-    "brand": {
-      "model": "brands",
-      "via": "printer"
-    },
     "toners": {
       "collection": "toners",
       "via": "printers",
       "dominant": true
+    },
+    "brand": {
+      "model": "brands",
+      "via": "printers"
     }
   }
 }
