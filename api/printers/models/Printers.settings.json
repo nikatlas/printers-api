@@ -28,6 +28,9 @@
     "brand": {
       "model": "brands",
       "via": "printers"
+    },
+    "link": {
+      "type": "text"
     }
   }
 }
