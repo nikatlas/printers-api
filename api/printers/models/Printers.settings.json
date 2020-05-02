@@ -20,17 +20,17 @@
     "description": {
       "type": "text"
     },
-    "toners": {
-      "collection": "toners",
-      "via": "printers",
-      "dominant": true
-    },
     "brand": {
       "model": "brands",
       "via": "printers"
     },
     "link": {
       "type": "text"
+    },
+    "toners": {
+      "collection": "toners",
+      "dominant": true,
+      "via": "printers"
     }
   }
 }
