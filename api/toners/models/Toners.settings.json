@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "toners",
+  "info": {
+    "name": "toners",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "model": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "printers": {
+      "collection": "printers",
+      "via": "toners"
+    }
+  }
+}

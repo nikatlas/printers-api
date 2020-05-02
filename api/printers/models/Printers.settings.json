@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "printers",
+  "info": {
+    "name": "printers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "model": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "brand": {
+      "model": "brands",
+      "via": "printer"
+    },
+    "toners": {
+      "collection": "toners",
+      "via": "printers",
+      "dominant": true
+    }
+  }
+}
