@@ -29,8 +29,11 @@
     },
     "toners": {
       "collection": "toners",
-      "dominant": true,
-      "via": "printers"
+      "via": "printers",
+      "dominant": true
+    },
+    "image": {
+      "type": "string"
     }
   }
 }

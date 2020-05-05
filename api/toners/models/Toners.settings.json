@@ -20,12 +20,12 @@
     "link": {
       "type": "string"
     },
+    "image": {
+      "type": "string"
+    },
     "printers": {
       "collection": "printers",
       "via": "toners"
-    },
-    "image": {
-      "type": "string"
     }
   }
 }
