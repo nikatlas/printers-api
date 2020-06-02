@@ -11,7 +11,7 @@ let $ = {
   sitemap: async (ctx) => {
     let printers = await $.getAll(strapi.query('printers'));
       let names = printers.map((p) => 
-        HOST + "/" + p.id + "/" + p.brand.name + "-" + p.model.replace(/\r?\n|\r/gm, ''));
+        HOST + "/printer/" + p.id + "/" + p.brand.name + "-" + p.model.replace(/\r?\n|\r/gm, ''));
       ctx.send(names.join('\n'));
   },
 
